@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "info": "Single value with equals to not solved."
+    },
+
+    {
+        "id": 2,
+        "info": "change the trash / bin icon for history. and let the stacker takes it's initial space and set the overflow issue"
+    },
+
+    {
+        "id": 3,
+        "info": "on screen change the sidebar should automatically switch to the history section."
+    },
+    {
+        "id": 5,
+        "info": "when you only wrote/type number and press equals to without any arithmetic operations"
+    }
+]

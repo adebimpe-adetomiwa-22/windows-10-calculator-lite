@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./font-awesome-pro-main/css/all.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <main class="main" id="main">
+                <header class="header">
+                    <div class="hamburger">
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="50px"
+                            height="50px"
+                            viewBox="0 0 50 50"
+                            enable-background="new 0 0 50 50"
+                            xml:space="preserve"
+                        >
+                            <g>
+                                <rect
+                                    x="12.5"
+                                    y="17.809"
+                                    width="25"
+                                    height="1.3"
+                                />
+                                <rect
+                                    x="12.5"
+                                    y="23.887"
+                                    width="25"
+                                    height="1.3"
+                                />
+                                <rect
+                                    x="12.5"
+                                    y="29.967"
+                                    width="25"
+                                    height="1.3"
+                                />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="title">
+                        <p>Standard</p>
+                    </div>
+
+                    <div class="toggle-history-button">
+                        <p class="fas fa-clock-rotate-left"></p>
+                    </div>
+                </header>
+
+                <section class="screen">
+                    <div class="screen-wrapper">
+                        <div class="stack-cover">
+                            <p class="stack">12.5+</p>
+                        </div>
+                        <h2>12.5</h2>
+                    </div>
+                </section>
+
+                <section class="numbers-and-functions">
+                    <div class="wrapper">
+                        <div class="top-chars">
+                            <p>MC</p>
+                            <p>MR</p>
+                            <p>M+</p>
+                            <p>M-</p>
+                            <p>MS</p>
+                        </div>
+
+                        <div class="main-chars">
+                            <p class="other-arithmetic percentage">%</p>
+                            <!-- <p>√</p> -->
+                            <p class="other-arithmetic sqaureroot">&#8730;</p>
+                            <p class="other-arithmetic square">x²</p>
+
+                            <p
+                                class="other-arithmetic one-division"
+                                style="font-size: 1rem"
+                            >
+                                1/x
+                            </p>
+                            <p class="ce">CE</p>
+                            <p class="clear">C</p>
+                            <p class="delete">
+                                <svg
+                                    version="1.1"
+                                    id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px"
+                                    y="0px"
+                                    width="50px"
+                                    height="50px"
+                                    viewBox="383.285 373.535 50 50"
+                                    enable-background="new 383.285 373.535 50 50"
+                                    xml:space="preserve"
+                                >
+                                    <path
+                                        d="M420.892,393.602l-5.357,4.933l5.357,4.934c0.699,0.644,0.699,1.711,0,2.355c-0.362,0.333-0.82,0.488-1.279,0.488
+	c-0.458,0-0.916-0.155-1.278-0.488l-5.358-4.934l-5.357,4.934c-0.361,0.333-0.82,0.488-1.278,0.488
+	c-0.459,0-0.917-0.155-1.279-0.488c-0.7-0.645-0.7-1.712,0-2.355l5.357-4.934l-5.357-4.933c-0.7-0.645-0.7-1.711,0-2.355
+	c0.699-0.645,1.858-0.645,2.558,0l5.357,4.933l5.358-4.933c0.699-0.645,1.857-0.645,2.558,0
+	C421.591,391.891,421.591,392.958,420.892,393.602z M430.762,387.424v22.223c0,2.133-1.883,3.889-4.224,3.889h-28.79
+	c-1.472,0-2.799-0.689-3.571-1.822l-7.94-11.711c-0.603-0.889-0.603-2.044,0-2.956l7.94-11.689c0.772-1.133,2.124-1.822,3.571-1.822
+	h28.814c2.316,0,4.223,1.755,4.223,3.889H430.762z M427.142,387.424c0-0.311-0.266-0.555-0.604-0.555h-28.79
+	c-0.217,0-0.41,0.089-0.506,0.267l-7.747,11.4l7.747,11.4c0.121,0.155,0.313,0.267,0.506,0.267h28.814
+	c0.338,0,0.604-0.245,0.604-0.556v-22.223H427.142z"
+                                    />
+                                </svg>
+                            </p>
+                            <p class="arithmetic divide">&divide;</p>
+
+                            <p class="number">7</p>
+                            <p class="number">8</p>
+                            <p class="number">9</p>
+                            <p class="arithmetic times">&times;</p>
+
+                            <p class="number">4</p>
+                            <p class="number">5</p>
+                            <p class="number">6</p>
+                            <p class="arithmetic minus">&minus;</p>
+
+                            <p class="number">1</p>
+                            <p class="number">2</p>
+                            <p class="number">3</p>
+                            <p class="arithmetic plus">&plus;</p>
+
+                            <p>&PlusMinus;</p>
+                            <p class="number">0</p>
+                            <p class="period">&period;</p>
+                            <p class="other-arithmetic equals">&equals;</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <section class="sidebar" id="sidebar">
+                <header class="header">
+                    <button href="#history" class="active">History</button>
+                    <button href="#memory">Memory</button>
+                </header>
+
+                <main class="main">
+                    <div class="sidebar-display">
+                        <section class="history show">
+                            <div class="no-history">
+                                <p>There's no history yet</p>
+                            </div>
+                            <div class="history-cover">
+                                <!-- <div>
+                                <p>2 + 2 =</p>
+                                <h2>5</h2>
+                            </div>
+                            <div>
+                                <p>2 + 2 =</p>
+                                <h2>5</h2>
+                            </div>
+                            <div>
+                                <p>2 + 2 =</p>
+                                <h2>5</h2>
+                            </div> -->
+                            </div>
+                            <!-- <div class="bin">
+                            <div>
+                                <p class="fas fa-trash-can"></p>
+                            </div>
+                        </div> -->
+                        </section>
+                        <section class="memory">
+                            <div class="no-memory">
+                                <p>There's nothing saved in the memory</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="bin">
+                        <div>
+                            <p class="fas fa-trash-can"></p>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </div>
+
+        <script type="module" src="./js/app.js"></script>
+    </body>
+</html>

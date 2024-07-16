@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Calibri";
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e4e4e4;
+  padding: 1em;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+@media only screen and (min-width: 545px) {
+  .container {
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 13rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 22%;
+  }
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.5em;
+}
+.main .header .hamburger svg {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.main .header .hamburger svg:hover {
+  background-color: #c3bebd;
+}
+.main .header .hamburger svg g {
+  background-color: blue;
+}
+.main .header .title p {
+  font-size: 1.3rem;
+}
+.main .header .toggle-history-button {
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: -0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: all 200ms ease;
+}
+@media only screen and (min-width: 545px) {
+  .main .header .toggle-history-button {
+    display: none;
+  }
+}
+.main .header .toggle-history-button:hover {
+  opacity: 0.7;
+  background-color: #dedede;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.main .header .toggle-history-button p {
+  font-size: 1.17rem;
+}
+.main .screen {
+  width: 100%;
+}
+.main .screen .screen-wrapper {
+  width: 100%;
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 7rem;
+}
+.main .screen .screen-wrapper div {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  max-width: 85vw;
+}
+.main .screen .screen-wrapper div::-webkit-scrollbar {
+  display: none;
+}
+.main .screen .screen-wrapper div .stack {
+  font-size: 0.85rem;
+}
+.main .screen .screen-wrapper h2 {
+  height: 3rem;
+  overflow-y: scroll;
+  font-size: 2.7rem;
+  font-size: sans-serif;
+  word-break: break-all;
+}
+.main .screen .screen-wrapper h2::-webkit-scrollbar {
+  display: none;
+}
+.main .numbers-and-functions {
+  margin-top: 3rem;
+  height: 100%;
+}
+.main .numbers-and-functions .wrapper {
+  height: 100%;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto 1fr;
+}
+.main .numbers-and-functions .wrapper .top-chars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main .numbers-and-functions .wrapper .top-chars p {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.main .numbers-and-functions .wrapper .main-chars {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .numbers-and-functions .wrapper .main-chars .delete svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.main .numbers-and-functions .wrapper .main-chars p {
+  font-size: 1.7rem;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.main .numbers-and-functions .wrapper .main-chars p:not(.arithmetic):hover {
+  background-color: #dedede;
+}
+.main .numbers-and-functions .wrapper .main-chars p:not(.number) {
+  background-color: #eeeeee;
+}
+.main .numbers-and-functions .wrapper .main-chars p.arithmetic:hover {
+  color: #ffffff;
+  background-color: #1b86db;
+}
+.main .numbers-and-functions .wrapper .main-chars p.number {
+  font-weight: 600;
+  background-color: #fafafa;
+}
+
+.sidebar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: fixed;
+  background-color: #e4e4e4;
+  width: 100vw;
+  height: 60vh;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(60vh);
+      -ms-transform: translateY(60vh);
+          transform: translateY(60vh);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.sidebar.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+@media only screen and (min-width: 545px) {
+  .sidebar {
+    position: static;
+    background-color: initial;
+    width: 100%;
+    height: initial;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.sidebar .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sidebar .header button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.35rem;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (min-width: 545px) {
+  .sidebar .header button {
+    display: block;
+  }
+}
+.sidebar .header button.active {
+  border-bottom: 0.2rem solid #0078d7;
+}
+.sidebar .header button:hover {
+  opacity: 0.7;
+}
+.sidebar .main {
+  margin-top: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.sidebar .main .sidebar-display {
+  position: relative;
+}
+.sidebar .main .sidebar-display .history {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
+  opacity: 0;
+  overflow-y: scroll;
+}
+.sidebar .main .sidebar-display .history::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.sidebar .main .sidebar-display .history::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  -webkit-box-shadow: inset 0 0 0.15rem #c1c1c1;
+          box-shadow: inset 0 0 0.15rem #c1c1c1;
+}
+.sidebar .main .sidebar-display .history::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+.sidebar .main .sidebar-display .history.show {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+.sidebar .main .sidebar-display .history > .no-history p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+@media only screen and (min-width: 545px) {
+  .sidebar .main .sidebar-display .history > .no-history p {
+    margin-left: initial;
+  }
+}
+.sidebar .main .sidebar-display .history > .no-history.disabled {
+  display: none;
+}
+.sidebar .main .sidebar-display .history .history-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 0.5rem;
+}
+.sidebar .main .sidebar-display .history .history-cover > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  opacity: 0.9;
+}
+.sidebar .main .sidebar-display .history .history-cover > div p {
+  opacity: 0.7;
+}
+.sidebar .main .sidebar-display .memory {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
+  opacity: 0;
+}
+.sidebar .main .sidebar-display .memory.show {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+.sidebar .main .sidebar-display .memory .no-memory p {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.sidebar .main .bin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.sidebar .main .bin div {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.sidebar .main .bin div.active {
+  opacity: 1;
+}
+.sidebar .main .bin div:hover {
+  background-color: #dedede;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.sidebar .main .bin div p {
+  font-size: 1.03rem;
+}/*# sourceMappingURL=main.css.map */
