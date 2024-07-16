@@ -61,10 +61,8 @@ body {
   height: 2rem;
   cursor: pointer;
 }
-@media only screen and (min-width: 545px) {
-  .main .header .hamburger svg:hover {
-    background-color: #c3bebd;
-  }
+.main .header .hamburger svg:hover {
+  background-color: #c3bebd;
 }
 .main .header .hamburger svg g {
   background-color: blue;
@@ -101,13 +99,11 @@ body {
     display: none;
   }
 }
-@media only screen and (min-width: 545px) {
-  .main .header .toggle-history-button:hover {
-    opacity: 0.7;
-    background-color: #dedede;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
-    border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
-  }
+.main .header .toggle-history-button:hover {
+  opacity: 0.7;
+  background-color: #dedede;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
 .main .header .toggle-history-button p {
   font-size: 1.17rem;
@@ -220,19 +216,15 @@ body {
           align-items: center;
   cursor: pointer;
 }
-@media only screen and (min-width: 545px) {
-  .main .numbers-and-functions .wrapper .main-chars p:not(.arithmetic):hover {
-    background-color: #dedede;
-  }
+.main .numbers-and-functions .wrapper .main-chars p:not(.arithmetic):hover {
+  background-color: #dedede;
 }
 .main .numbers-and-functions .wrapper .main-chars p:not(.number) {
   background-color: #eeeeee;
 }
-@media only screen and (min-width: 545px) {
-  .main .numbers-and-functions .wrapper .main-chars p.arithmetic:hover {
-    color: #ffffff;
-    background-color: #1b86db;
-  }
+.main .numbers-and-functions .wrapper .main-chars p.arithmetic:hover {
+  color: #ffffff;
+  background-color: #1b86db;
 }
 .main .numbers-and-functions .wrapper .main-chars p.number {
   font-weight: 600;
@@ -300,10 +292,8 @@ body {
 .sidebar .header button.active {
   border-bottom: 0.2rem solid #0078d7;
 }
-@media only screen and (min-width: 545px) {
-  .sidebar .header button:hover {
-    opacity: 0.7;
-  }
+.sidebar .header button:hover {
+  opacity: 0.7;
 }
 .sidebar .main {
   margin-top: 1rem;
@@ -440,12 +430,10 @@ body {
 .sidebar .main .bin div.active {
   opacity: 1;
 }
-@media only screen and (min-width: 545px) {
-  .sidebar .main .bin div:hover {
-    background-color: #dedede;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
-    border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
-  }
+.sidebar .main .bin div:hover {
+  background-color: #dedede;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-left: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
 .sidebar .main .bin div p {
   font-size: 1.03rem;
